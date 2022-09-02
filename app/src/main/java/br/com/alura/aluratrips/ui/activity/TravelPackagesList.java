@@ -14,16 +14,19 @@ import br.com.alura.aluratrips.ui.adapter.ListTravelPackagesAdapter;
 
 public class TravelPackagesList extends AppCompatActivity {
 
+    public static final String APPBAR_TITLE = "Pacotes";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_travel_packages_list);
-        setTitle("Pacotes");
+        setTitle(APPBAR_TITLE);
+        configureTravelPackagesListView();
+    }
 
+    private void configureTravelPackagesListView() {
         ListView listTravelPackages = findViewById(R.id.list_travel_package_listview);
-
         List<TravelPackage> travelPackages = new TravelPackageDAO().get();
-
         listTravelPackages.setAdapter(new ListTravelPackagesAdapter(travelPackages, this));
     }
 }
