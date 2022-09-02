@@ -3,13 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.activity.TravelPackagesList">
+    android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/list_travel_package_image_banner"
         android:layout_width="0dp"
         android:layout_height="120dp"
+        android:contentDescription="@string/banner_description"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,29 +18,31 @@
         app:srcCompat="@color/purple_700" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/list_travel_package_textview_banner_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="Especiais"
+        android:text="@string/banner_title"
         android:textColor="@android:color/white"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@id/list_travel_package_image_banner"
+        app:layout_constraintTop_toTopOf="@id/list_travel_package_image_banner"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintEnd_toEndOf="@id/list_travel_package_image_banner"
+        app:layout_constraintStart_toStartOf="@id/list_travel_package_image_banner"
+        app:layout_constraintHorizontal_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/list_travel_package_textview_banner_country"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Brasil"
+        android:text="@string/banner_country"
         android:textColor="@android:color/white"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintStart_toStartOf="@+id/list_travel_package_textview_banner_title"
+        app:layout_constraintTop_toBottomOf="@+id/list_travel_package_textview_banner_title" />
 
     <ListView
         android:id="@+id/list_travel_package_listview"
@@ -51,7 +53,7 @@
         tools:listitem="@layout/item_travel_package"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintTop_toBottomOf="@id/list_travel_package_image_banner"
         app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

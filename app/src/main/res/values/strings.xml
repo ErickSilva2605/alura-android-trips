@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Alura Trips</string>
+    <string name="banner_description">Banner inicial</string>
+    <string name="banner_title">Especiais</string>
+    <string name="banner_country">Brasil</string>
 </resources>
