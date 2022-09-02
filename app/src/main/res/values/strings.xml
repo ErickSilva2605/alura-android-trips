@@ -3,4 +3,5 @@
     <string name="banner_description">Banner inicial</string>
     <string name="banner_title">Especiais</string>
     <string name="banner_country">Brasil</string>
+    <string name="image_place">Imagem do local</string>
 </resources>

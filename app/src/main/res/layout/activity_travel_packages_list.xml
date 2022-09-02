@@ -15,7 +15,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@color/purple_700" />
+        app:srcCompat="@color/colorPrimary" />
 
     <TextView
         android:id="@+id/list_travel_package_textview_banner_title"
