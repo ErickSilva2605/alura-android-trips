@@ -18,6 +18,7 @@ public class TravelPackagesList extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_travel_packages_list);
+        setTitle("Pacotes");
 
         ListView listTravelPackages = findViewById(R.id.list_travel_package_listview);
 

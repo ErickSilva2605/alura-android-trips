@@ -10,7 +10,11 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.math.BigDecimal;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 import java.util.List;
+import java.util.Locale;
 
 import br.com.alura.aluratrips.R;
 import br.com.alura.aluratrips.model.TravelPackage;
@@ -59,10 +63,18 @@ public class ListTravelPackagesAdapter extends BaseAdapter {
         image.setImageDrawable(travelPackageImage);
 
         TextView days = viewInflated.findViewById(R.id.item_package_days);
-        days.setText(travelPackage.getDays() + "dias");
+        int daysCount = travelPackage.getDays();
+        String daysText = daysCount > 1 ? daysCount + " dias" : daysCount + " dia";
+        days.setText(daysText);
 
         TextView price = viewInflated.findViewById(R.id.item_package_price);
-        price.setText(travelPackage.getPrice().toString());
+        BigDecimal travelPackagePrice = travelPackage.getPrice();
+        NumberFormat formatBR = DecimalFormat.getCurrencyInstance(
+                new Locale("pt", "br"));
+        String priceBR = formatBR
+                .format(travelPackagePrice)
+                .replace("R$", "R$ ");
+        price.setText(priceBR);
 
         return viewInflated;
     }
