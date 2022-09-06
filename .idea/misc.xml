@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Cursos/Alura/Android/Layouts/Projetos/AluraTrips/app/src/main/res/drawable/button_rounded_orange.xml" value="0.161" />
+        <entry key="..\:/Cursos/Alura/Android/Layouts/Projetos/AluraTrips/app/src/main/res/layout/activity_detail_package.xml" value="0.264" />
         <entry key="..\:/Cursos/Alura/Android/Layouts/Projetos/AluraTrips/app/src/main/res/layout/activity_travel_packages_list.xml" value="0.264" />
         <entry key="..\:/Cursos/Alura/Android/Layouts/Projetos/AluraTrips/app/src/main/res/layout/item_travel_package.xml" value="0.4" />
       </map>

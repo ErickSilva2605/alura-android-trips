@@ -4,4 +4,6 @@
     <string name="banner_title">Especiais</string>
     <string name="banner_country">Brasil</string>
     <string name="image_place">Imagem do local</string>
+    <string name="final_price">Preço final:</string>
+    <string name="make_payment">Realizar Pagamento</string>
 </resources>
