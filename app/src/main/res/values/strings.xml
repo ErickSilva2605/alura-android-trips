@@ -14,4 +14,5 @@
     <string name="payment_cvc">CVC</string>
     <string name="payment_card_name">Nome no cartão</string>
     <string name="finalize_purchase">Finalizar compra</string>
+    <string name="mask_only_text">"abcdefghijklmnopqrstuvwxyzçABCDEFGHIJKLMNOPQRSTUVWXYZÇ\u0020"</string>
 </resources>

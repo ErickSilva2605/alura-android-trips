@@ -11,8 +11,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:gravity="center"
-        android:text="@string/payment_information"
         android:textAlignment="center"
+        android:text="@string/payment_information"
         android:textColor="@android:color/black"
         android:textSize="14sp"
         android:textStyle="bold"
@@ -25,6 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginTop="20dp"
         android:text="@string/purchase_value"
         android:textColor="@android:color/black"
@@ -33,7 +34,7 @@
         app:layout_constraintTop_toBottomOf="@+id/payment_information" />
 
     <TextView
-        android:id="@+id/payment_purchase_value"
+        android:id="@+id/payment_purchase_price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -46,23 +47,21 @@
     <EditText
         android:id="@+id/payment_card_number"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_height="48dp"
+        android:layout_margin="8dp"
         android:hint="@string/card_number_hint"
         android:inputType="number"
         android:maxLength="12"
         android:importantForAutofill="no"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/payment_purchase_value"
+        app:layout_constraintTop_toBottomOf="@id/payment_purchase_price"
         />
 
     <EditText
         android:id="@+id/payment_card_month"
-        android:layout_width="45dp"
-        android:layout_height="wrap_content"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:hint="@string/payment_month"
         android:inputType="number"
         android:maxLength="2"
@@ -73,8 +72,8 @@
 
     <EditText
         android:id="@+id/payment_card_year"
-        android:layout_width="45dp"
-        android:layout_height="wrap_content"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:hint="@string/payment_year"
         android:inputType="number"
         android:maxLength="2"
@@ -99,8 +98,9 @@
     <EditText
         android:id="@+id/payment_card_name"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:inputType="text"
+        android:digits="@string/mask_only_text"
         android:hint="@string/payment_card_name"
         android:autofillHints="no"
         app:layout_constraintStart_toStartOf="@id/payment_card_month"
