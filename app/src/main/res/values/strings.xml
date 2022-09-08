@@ -6,4 +6,12 @@
     <string name="image_place">Imagem do local</string>
     <string name="final_price">Preço final:</string>
     <string name="make_payment">Realizar Pagamento</string>
+    <string name="payment_information">Digite as informações do cartão de credito que você deseja usar para o pagamento</string>
+    <string name="purchase_value">Valor da compra:</string>
+    <string name="card_number_hint">Numero do cartão</string>
+    <string name="payment_month">MM</string>
+    <string name="payment_year">AA</string>
+    <string name="payment_cvc">CVC</string>
+    <string name="payment_card_name">Nome no cartão</string>
+    <string name="finalize_purchase">Finalizar compra</string>
 </resources>
