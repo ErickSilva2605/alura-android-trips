@@ -24,7 +24,7 @@ public class TravelPackagesList extends AppCompatActivity {
         setTitle(APPBAR_TITLE);
         configureTravelPackagesListView();
 
-        Intent intent = new Intent(this, PaymentActivity.class);
+        Intent intent = new Intent(this, DetailPurchaseActivity.class);
         startActivity(intent);
     }
 

@@ -15,4 +15,8 @@
     <string name="payment_card_name">Nome no cartão</string>
     <string name="finalize_purchase">Finalizar compra</string>
     <string name="mask_only_text">"abcdefghijklmnopqrstuvwxyzçABCDEFGHIJKLMNOPQRSTUVWXYZÇ\u0020"</string>
+    <string name="banner_detail_purchase">Banner do resumo do pagamento</string>
+    <string name="congratulation">Parabéns!</string>
+    <string name="successful_purchase">Compra realizada com sucesso :)</string>
+    <string name="purchase_detail_information">Confira o resumo da compra:</string>
 </resources>
